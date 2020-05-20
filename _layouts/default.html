@@ -1,0 +1,90 @@
+{% comment %}
+
+	Dimension by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+
+	Name:
+
+		Default layout
+
+	Description:
+
+		Basic HTML foundation for all pages.
+
+	Example:
+
+		---
+		layout: default
+		---
+
+{% endcomment %}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>OhanaMC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1 class="site-title">Ohana Network</h1>
+								<p class="mcserver-status">
+									HCF: <span class="player-count1" data-playercounter-ip="144.217.73.67:25569" data-playercounter-format="{online}/{max}"></span>
+									Hub: <span class="player-count2" data-playercounter-ip="54.39.38.201:25681" data-playercounter-format="{online}/{max}"></span>
+								</p>
+								<p class="things"> Server IP: play.ohana.gg 
+								</p>
+								<p class="things"> Discord: discord.ohana.gg 
+								</p>
+								<p class="things"> TeamSpeak: ts.ohana.gg 
+								</p>
+
+							</div>
+						</div>
+						<nav>
+							<ul>
+								{% for panel in site.panels %}
+									<li><a href="#{{ panel.html_id }}">{{ panel.title }}</a></li>
+								{% endfor %}
+							</ul>
+						</nav>
+					</header>
+
+				{{ content }}
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Ohana Network, 2020</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/browser.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/breakpoints.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/util.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+	</body>
+</html>
