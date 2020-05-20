@@ -1,2 +1,5 @@
 .jekyll-metadata
 vendor
+_site
+.jekyll-cache
+html
