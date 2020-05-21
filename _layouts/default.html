@@ -56,7 +56,14 @@
 						<nav>
 							<ul>
 								{% for panel in site.panels %}
+
+									{% if panel.external_url %}
+									<li><a href="{{ panel.external_url }}">{{ panel.title }}</a></li>
+									{% endif %}
+
+									{% if panel.html_id %}
 									<li><a href="#{{ panel.html_id }}">{{ panel.title }}</a></li>
+									{% endif %}
 								{% endfor %}
 							</ul>
 						</nav>
