@@ -1,16 +1,16 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
-@font-face { font-family: 'kayak_sansbold_italic'; src: url("./fonts/KayakSans/kayak_sans_bold_italic-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_bold_italic-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "kayak_sansbold_italic"; src: url("./fonts/KayakSans/kayak_sans_bold_italic-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_bold_italic-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'kayak_sansbold'; src: url("./fonts/KayakSans/kayak_sans_bold-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_bold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "kayak_sansbold"; src: url("./fonts/KayakSans/kayak_sans_bold-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_bold-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'kayak_sanslight_italic'; src: url("./fonts/KayakSans/kayak_sans_light_italic-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_light_italic-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "kayak_sanslight_italic"; src: url("./fonts/KayakSans/kayak_sans_light_italic-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_light_italic-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'kayak_sanslight'; src: url("./fonts/KayakSans/kayak_sans_light-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_light-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "kayak_sanslight"; src: url("./fonts/KayakSans/kayak_sans_light-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_light-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'kayak_sansregular_italic'; src: url("./fonts/KayakSans/kayak_sans_regular_italic-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_regular_italic-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "kayak_sansregular_italic"; src: url("./fonts/KayakSans/kayak_sans_regular_italic-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_regular_italic-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'kayak_sansregular'; src: url("./fonts/KayakSans/kayak_sans_regular-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "kayak_sansregular"; src: url("./fonts/KayakSans/kayak_sans_regular-webfont.woff2") format("woff2"), url("./fonts/KayakSans/kayak_sans_regular-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: "Evogria"; src: url("./fonts/evogria-webfont.woff2") format("woff2"), url("./fonts/evogria-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
@@ -82,7 +82,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after { -moz-anim
 
 .things, .mcserver-status, .player-count1, .player-count2 { margin-bottom: 2px; }
 
-.mcserver-status, .player-count1, .player-count2 { font-family: "SFProDisplay-Bold"; }
+.mcserver-status, .player-count1, .player-count2 { font-family: "kayak_sansregular"; }
 
 .player-count1, .player-count2 { color: red; }
 
@@ -97,7 +97,7 @@ html { font-size: 16pt; }
 
 @media screen and (max-width: 360px) { html { font-size: 10pt; } }
 
-body, input, select, textarea { color: #ffffff; font-family: "SFProDisplay-Regular", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.65; }
+body, input, select, textarea { color: #ffffff; font-family: "kayak_sanslight", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.65; }
 
 a { -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; border-bottom: dotted 1px rgba(255, 255, 255, 0.5); text-decoration: none; color: inherit; }
 
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 { color: #ffffff; font-weight: 600; line-height: 1.5; mar
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; text-decoration: none; }
 
-h1.major, h2.major, h3.major, h4.major, h5.major, h6.major { border-bottom: solid 1px #ffffff; width: -moz-max-content; width: -webkit-max-content; width: -ms-max-content; width: max-content; padding-bottom: 0.5rem; margin: 0 0 2rem 0; }
+h1.major, h2.major, h3.major, h4.major, h5.major, h6.major { border-bottom: solid 1px #ffffff; width: -moz-max-content; width: -webkit-max-content; width: -ms-max-content; width: max-content; padding-bottom: 0.5rem; margin: 0 0 2rem 0; font-size: 4rem; }
 
 h1 { font-size: 5.3rem; line-height: 1.3; letter-spacing: 0.1rem; }
 
